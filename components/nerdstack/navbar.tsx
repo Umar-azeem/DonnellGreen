@@ -8,7 +8,7 @@ import { loanPrograms } from "@/app/data/loanPrograms";
 import Image from "next/image";
 import { Mail } from "lucide-react";
 
-// ─── Helper: get icon component ──────────────────────────────────
+// ─── Helper: get icon component ───────────────────
 const getIconComponent = (iconName: string) => {
   const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
     DollarSign: Icons.DollarSign,
@@ -20,7 +20,7 @@ const getIconComponent = (iconName: string) => {
   return iconMap[iconName] || Icons.HelpCircle;
 };
 
-// ─── Navigation Links ─────────────────────────────────────────────
+// ─── Navigation Links ─────────────────────────────
 const mainLinks = [
   // { label: "Product", href: "" },
   { label: "About", href: "/about" },
@@ -52,7 +52,7 @@ export function Navbar() {
   const isActive = (href: string) => pathname === href;
   const isLoanProgramsActive = pathname === "/loan-programs";
 
-  // ─── Desktop Dropdown ────────────────────────────────────────────
+  // ─── Desktop Dropdown ─────────────────────────────
   const renderDesktopDropdown = () => (
     <div
       className="relative"
@@ -106,7 +106,7 @@ export function Navbar() {
     </div>
   );
 
-  // ─── Mobile Dropdown ──────────────────────────────────────────────
+  // ─── Mobile Dropdown ──────────────────────────────────
   const renderMobileDropdown = () => (
     <div className="border-t border-border pt-2 mt-1">
       <button
@@ -141,7 +141,7 @@ export function Navbar() {
     </div>
   );
 
-  // ─── JSX ──────────────────────────────────────────────────────────
+  // ─── JSX ──────────────────────────────────────────────
   return (
     <div className="fixed inset-x-0 top-4 z-50 flex justify-center px-4">
       <nav
@@ -187,7 +187,7 @@ export function Navbar() {
             Sign in
           </Link>
           <Link
-            href="/contact"
+            href="https://luminlending-apply-donnell"
             className="rounded-lg bg-midnight-ink px-4 py-2 text-[14px] font-light text-paper-cream transition-transform duration-300 hover:-translate-y-0.5"
           >
             Apply Now
@@ -232,7 +232,7 @@ export function Navbar() {
             {renderMobileDropdown()}
 
             <Link
-              href="mailto:donnell.green@fairwaymc.com"
+              href="mailto: donnell.green@luminlending.com"
               className="mt-2 rounded-lg flex items-center gap-2 justify-center bg-midnight-ink px-4 py-2 text-center text-[14px] text-paper-cream"
             >
               <Mail className="size-4" strokeWidth={1.6} /> Mail Us

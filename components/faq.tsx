@@ -18,6 +18,8 @@ import {
   ShieldCheck,
   ArrowRight,
   Navigation,
+  Calendar,
+  Video,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -35,7 +37,7 @@ const faqCategories = [
       {
         question: "How long does the mortgage process take?",
         answer:
-          "From application to closing, most home purchases take 30–45 days. Refinances typically close in 21–30 days. With Fairway's support system and my 21 years of customer service experience, I help keep your transaction seamless and on track. I'll give you a clear timeline upfront and keep you updated at every milestone.",
+          "From application to closing, most home purchases take 30–45 days. Refinances typically close in 21–30 days. With   system and my 21 years of customer service experience, I help keep your transaction seamless and on track. I'll give you a clear timeline upfront and keep you updated at every milestone.",
       },
       {
         question: "Do I need a real estate agent?",
@@ -154,7 +156,7 @@ export default function FAQ() {
     <PageShell
       eyebrow="FAQ"
       title="Frequently Asked Questions"
-      description="Everything you need to know about working with Donnell Green at Fairway Independent Mortgage Corporation."
+      description="Everything you need to know about working with Donnell Green"
     >
       <div className="mx-auto max-w-[1000px] space-y-12">
         {/* ─── INTRO ─────────────────────────────────────────────────── */}
@@ -265,61 +267,63 @@ export default function FAQ() {
         <Reveal>
           <section className="overflow-hidden rounded-[24px] border border-border bg-lift-white shadow-card-soft transition-all duration-300 hover:-translate-y-1">
             <div className="grid lg:grid-cols-2">
-              {/* Left — Map embed */}
+              {/* Left — Office Image */}
               <div className="relative h-72 w-full lg:h-auto lg:min-h-[420px]">
-                <iframe
-                  title="Donnell Green Office Location — 40 W. Chesapeake Ave, Suite 400, Towson, MD 21204"
-                  src={mapEmbedUrl}
-                  className="absolute inset-0 h-full w-full border-0"
-                  allowFullScreen
+                <img
+                  src="/img/map.webp"
+                  alt="Donnell Green office – comfortable interview space"
+                  className="absolute inset-0 h-full w-full object-cover"
                   loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
                 />
               </div>
 
-              {/* Right — Location details */}
+              {/* Right — Interview details */}
               <div className="flex flex-col justify-center p-8 sm:p-10">
                 <span className="text-sm font-semibold uppercase tracking-wider text-[#0F6D69]">
-                  Visit My Office
+                  Schedule an Interview
                 </span>
                 <h2 className="mt-2 font-display text-3xl font-bold text-midnight-ink">
-                  Towson, Maryland
+                  Let's Connect
                 </h2>
                 <p className="mt-4 text-sm text-midnight-ink/70 leading-relaxed">
-                  Conveniently located in downtown Towson, just minutes from the
-                  Baltimore beltway. Whether you're buying your first home or
-                  refinancing, I'm happy to meet in person or connect virtually
-                  — whichever works best for you.
+                  Whether you're buying your first home or refinancing, I'm
+                  happy to meet in person or connect virtually — whichever works
+                  best for you. Pick a time that suits your schedule and let's
+                  talk.
                 </p>
 
                 <div className="mt-6 space-y-4">
                   <div className="flex items-start gap-4">
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#0F6D69]/10 text-[#0F6D69]">
-                      <MapPin className="h-5 w-5" strokeWidth={1.8} />
+                      <Calendar className="h-5 w-5" strokeWidth={1.8} />
                     </div>
                     <div>
-                      <p className="font-semibold text-midnight-ink">Address</p>
+                      <p className="font-semibold text-midnight-ink">
+                        Flexible Scheduling
+                      </p>
                       <p className="text-sm text-midnight-ink/60">
-                        40 W. Chesapeake Ave, Suite 400
+                        Weekdays & evenings available
                         <br />
-                        Towson, MD 21204
+                        <span className="text-xs text-midnight-ink/40">
+                          (Eastern Standard Time)
+                        </span>
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-4">
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#0F6D69]/10 text-[#0F6D69]">
-                      <Clock className="h-5 w-5" strokeWidth={1.8} />
+                      <Video className="h-5 w-5" strokeWidth={1.8} />
                     </div>
                     <div>
                       <p className="font-semibold text-midnight-ink">
-                        Office Hours
+                        Meeting Options
                       </p>
                       <p className="text-sm text-midnight-ink/60">
-                        Mon – Fri: 8:30 AM – 6:00 PM
+                        In-person or virtual
                         <br />
                         <span className="text-xs text-midnight-ink/40">
-                          (Eastern Standard Time)
+                          Zoom, Google Meet, or phone call
                         </span>
                       </p>
                     </div>
@@ -344,25 +348,21 @@ export default function FAQ() {
                 </div>
 
                 <div className="mt-8 flex flex-wrap gap-3">
-                  <a
-                    href="https://www.google.com/maps/dir/?api=1&destination=40+W+Chesapeake+Ave+Suite+400+Towson+MD+21204"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Button className="bg-[#0F6D69] text-white shadow-md transition-all duration-300 hover:bg-[#96694f] hover:shadow-lg">
-                      <Navigation className="mr-2 h-4 w-4" />
-                      Get Directions
-                    </Button>
-                  </a>
                   <Link href="/contact">
+                    <Button className="bg-[#0F6D69] text-white shadow-md transition-all duration-300 hover:bg-[#96694f] hover:shadow-lg">
+                      <Calendar className="mr-2 h-4 w-4" />
+                      Schedule Interview
+                    </Button>
+                  </Link>
+                  <a href="tel:+16679002913">
                     <Button
                       variant="outline"
                       className="border-[#0F6D69] text-[#0F6D69] transition-all duration-300 hover:bg-[#0F6D69] hover:text-white"
                     >
-                      <Mail className="mr-2 h-4 w-4" />
-                      Contact Me
+                      <Phone className="mr-2 h-4 w-4" />
+                      Call Now
                     </Button>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -401,7 +401,7 @@ export default function FAQ() {
               </a>
 
               <a
-                href="mailto:donnell.green@fairwaymc.com"
+                href="mailto: donnell.green@luminlending.com"
                 className="group flex flex-col items-center rounded-[20px] border border-border bg-lift-white/50 p-6 text-center transition-all duration-300 hover:bg-lift-white"
               >
                 <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#0F6D69]/10 text-[#0F6D69] transition group-hover:bg-[#0F6D69] group-hover:text-white">
@@ -411,7 +411,7 @@ export default function FAQ() {
                   Email Me
                 </h3>
                 <p className="mt-1 text-xs text-[#0F6D69] break-all">
-                  donnell.green@fairwaymc.com
+                  donnell.green@luminlending.com
                 </p>
               </a>
             </div>
@@ -432,10 +432,7 @@ export default function FAQ() {
           <section className="rounded-[24px] border border-border bg-lift-white/50 p-6 text-center">
             <div className="flex items-center justify-center gap-2 text-xs text-midnight-ink/50">
               <ShieldCheck className="h-4 w-4" />
-              <span>
-                Donnell Green · NMLS# 1217575 · Fairway Independent Mortgage
-                Corporation
-              </span>
+              <span>Donnell Green · NMLS# 1217575 ·</span>
             </div>
             <p className="mt-2 text-xs text-midnight-ink/40 leading-relaxed">
               This information is for educational purposes only and does not

@@ -22,7 +22,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Donnell Green — Loan Officer | Fairway Independent Mortgage",
   description:
-    "Meet Donnell Green, loan officer at Fairway Independent Mortgage Corporation. 6+ years in mortgages, specializing in home purchasing and refinancing. 5 stars, 39 reviews.",
+    "Meet Donnell Green, loan officer with 6+ years in mortgages, specializing in home purchasing and refinancing. 5 stars, 39 reviews.",
 };
 
 // ─── Loan Products (Donnell's mortgage services) ─────────────────
@@ -182,7 +182,7 @@ export default function DonnellGreenPage() {
     <PageShell
       eyebrow="Meet Your Loan Officer"
       title="Donnell Green"
-      description="Loan Officer at Fairway Independent Mortgage Corporation. Helping families purchase and refinance homes with confidence for over 6 years."
+      description="Loan Officer  Helping families purchase and refinance homes with confidence for over 6 years."
     >
       <div className="mx-auto max-w-[1000px] space-y-20">
         {/* ─── About / Bio Section ───────────────────────────────── */}
@@ -223,10 +223,10 @@ export default function DonnellGreenPage() {
                 <p className="mt-3 text-sm text-midnight-ink/70 leading-relaxed">
                   My many years of experience and tenacity will showcase my
                   industry product knowledge and my absolute integrity. Backed
-                  by Fairway's support system, I'll help ease the mortgage
-                  process and make your transaction seamless. My work ethic and
-                  passion to deliver 100% customer satisfaction will guarantee
-                  loyal customers for life.
+                  by system, I'll help ease the mortgage process and make your
+                  transaction seamless. My work ethic and passion to deliver
+                  100% customer satisfaction will guarantee loyal customers for
+                  life.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
                   <Link href="/about">
@@ -374,7 +374,7 @@ export default function DonnellGreenPage() {
                   Website
                 </div>
                 <a
-                  href="https://mobile.fairwaynow.com/homehub/signup/donnell.green@fairwaymc.com"
+                  href="https://mobile.fairwaynow.com/homehub/signup/ donnell.green@luminlending.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-1 break-all text-xs text-midnight-ink/60 hover:underline"
@@ -484,7 +484,9 @@ export default function DonnellGreenPage() {
                     {review.loanType && (
                       <span>Loan Type: {review.loanType}</span>
                     )}
-                    {review.onTime && <span>Close on time: {review.onTime}</span>}
+                    {review.onTime && (
+                      <span>Close on time: {review.onTime}</span>
+                    )}
                     {review.fees && <span>Fees: {review.fees}</span>}
                   </div>
                 </div>
@@ -516,7 +518,7 @@ export default function DonnellGreenPage() {
             </p>
             <div className="mt-4 flex flex-wrap justify-center gap-3">
               <a
-                href="https://mobile.fairwaynow.com/homehub/signup/donnell.green@fairwaymc.com"
+                href="https://mobile.fairwaynow.com/homehub/signup/ donnell.green@luminlending.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >

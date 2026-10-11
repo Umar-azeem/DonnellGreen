@@ -98,7 +98,8 @@ export function Features() {
             </div>
           </div>
           <Link
-            href="/reviews"
+            href="https://www.zillow.com/lender-profile/dgreen82/"
+            target="_blank"
             className="mt-2 inline-flex items-center gap-2 whitespace-nowrap rounded-lg border border-border bg-lift-white px-5 py-3 text-sm font-medium text-midnight-ink transition-colors hover:bg-midnight-ink/5"
           >
             VIEW MORE TESTIMONIALS HERE

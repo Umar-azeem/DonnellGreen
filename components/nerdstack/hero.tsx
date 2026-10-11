@@ -151,17 +151,20 @@ export function Hero() {
 
           {/* Subtitle */}
           <p className="ns-fade-up mt-4 text-2xl font-light text-midnight-ink/64">
-            Your Local Loan officer
+            Your Local Mortgage Broker
           </p>
 
           {/* Description */}
           <p className="ns-fade-up mt-2 max-w-sm text-base font-light leading-relaxed text-midnight-ink/50">
-            Hello friends, family, and future referral partners. My name is
-            Donnell Green I'm a loan officer at Fairway Independent Mortgage
-            Corporation where we specialize in home purchasing and home
-            refinancing with a ton of products for both. I have been in the
-            mortgage industry for 6 years, finance for 10 years, sales for 11
-            years, and customer services 21 years.
+            Hi, I’m Donnell Green, a Senior Mortgage Broker at Lumin Lending. I
+            help clients explore options for buying a home, refinancing,
+            accessing home equity, and financing investment properties. With
+            access to a wide range of loan programs, I can help you compare
+            solutions that fit your goals. I have 8 years of mortgage
+            experience, 12 years in finance, 13 years in sales, and 24 years in
+            customer service. Whether you’re a homebuyer, a current homeowner,
+            or a referral partner, you can expect clear guidance and consistent
+            communication from application through closing.
           </p>
           <div
             className="ns-fade-up mt-8 flex w-full flex-col gap-3 sm:w-auto sm:flex-row"
@@ -247,7 +250,7 @@ export function Hero() {
                   </a>
                   {/* Email */}
                   <a
-                    href="mailto:donnell.green@fairwaymc.com"
+                    href="mailto: donnell.green@luminlending.com"
                     className="rounded-full bg-[rgba(35,31,35,0.05)] p-2.5 text-midnight-ink/60 transition-all hover:bg-[rgba(35,31,35,0.1)] hover:text-core-coral hover:shadow-md"
                     aria-label="Email ByzLoan"
                   >

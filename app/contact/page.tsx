@@ -12,13 +12,13 @@ const socialLinks = [
   {
     id: "linkedin",
     icon: FaLinkedin,
-    url: "http://linkedin.com/in/donnell-green-b2557066",
+    url: "https://www.linkedin.com/in/donnell-green-b2557066",
     label: "LinkedIn",
   },
   {
-    id: "zillow",
+    id: "instagram",
     icon: FaGoogle, // Zillow doesn't have a react-icon, using Google as placeholder or you can use a custom SVG
-    url: "https://www.zillow.com/lender-profile/dgreen82/",
+    url: "https://www.instagram.com/donnell_finances_homes",
     label: "Zillow",
   },
 ];
@@ -48,7 +48,7 @@ export default function ContactPage() {
 Email: ${email}
 Phone: ${phone}
 State: ${state}
-Primary Goal: ${primaryGoal}
+Loan Program: ${primaryGoal}
 
 Message:
 ${message || "No additional message provided."}
@@ -58,7 +58,7 @@ This inquiry was sent from the Donnell Green - Fairway Independent Mortgage webs
     );
 
     window.open(
-      `mailto:donnell.green@fairwaymc.com?subject=${emailSubject}&body=${emailBody}`,
+      `mailto: donnell.green@luminlending.com?subject=${emailSubject}&body=${emailBody}`,
       "_blank",
     );
 
@@ -88,10 +88,10 @@ This inquiry was sent from the Donnell Green - Fairway Independent Mortgage webs
               <p className="mt-1 text-sm text-midnight-ink/50">
                 If it didn't open, please contact us directly at{" "}
                 <a
-                  href="mailto:donnell.green@fairwaymc.com"
+                  href="mailto: donnell.green@luminlending.com"
                   className="font-medium text-midnight-ink underline"
                 >
-                  donnell.green@fairwaymc.com
+                  donnell.green@luminlending.com
                 </a>
               </p>
               <Button
@@ -153,8 +153,8 @@ This inquiry was sent from the Donnell Green - Fairway Independent Mortgage webs
                         No Obligation, No Pressure
                       </h4>
                       <p className="text-sm text-midnight-ink/60">
-                        This is about discovery and planning. I provide
-                        clarity, not a heavy sales pitch.
+                        This is about discovery and planning. I provide clarity,
+                        not a heavy sales pitch.
                       </p>
                     </div>
                   </div>
@@ -183,7 +183,7 @@ This inquiry was sent from the Donnell Green - Fairway Independent Mortgage webs
                     </a>
 
                     <a
-                      href="mailto:donnell.green@fairwaymc.com"
+                      href="mailto: donnell.green@luminlending.com"
                       className="group flex items-start gap-4"
                     >
                       <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-border bg-lift-white text-midnight-ink transition group-hover:bg-[#0F6D69] group-hover:text-lift-white">
@@ -191,7 +191,7 @@ This inquiry was sent from the Donnell Green - Fairway Independent Mortgage webs
                       </div>
                       <div>
                         <p className="text-lg font-bold text-midnight-ink group-hover:text-midnight-ink/80 break-all">
-                          donnell.green@fairwaymc.com
+                          donnell.green@luminlending.com
                         </p>
                         <p className="text-xs text-midnight-ink/50">
                           Email for Detailed Inquiries
@@ -269,11 +269,11 @@ This inquiry was sent from the Donnell Green - Fairway Independent Mortgage webs
                 </h3>
                 <div className="mt-2 flex flex-wrap gap-3">
                   <a
-                    href="mailto:donnell.green@fairwaymc.com"
+                    href="mailto: donnell.green@luminlending.com"
                     className="inline-flex items-center gap-2 rounded-full bg-midnight-ink/5 px-3 py-1.5 text-xs text-midnight-ink/70 transition hover:bg-midnight-ink/10"
                   >
                     <Mail className="h-3.5 w-3.5" />
-                    donnell.green@fairwaymc.com
+                    donnell.green@luminlending.com
                   </a>
                   <a
                     href="tel:+16679002913"
@@ -350,56 +350,12 @@ This inquiry was sent from the Donnell Green - Fairway Independent Mortgage webs
                     >
                       <option value="">Select a state…</option>
                       {[
-                        "AL",
-                        "AK",
-                        "AZ",
-                        "AR",
-                        "CA",
-                        "CO",
-                        "CT",
-                        "DE",
-                        "FL",
-                        "GA",
-                        "HI",
-                        "ID",
-                        "IL",
-                        "IN",
-                        "IA",
-                        "KS",
-                        "KY",
-                        "LA",
-                        "ME",
-                        "MD",
-                        "MA",
-                        "MI",
-                        "MN",
-                        "MS",
-                        "MO",
-                        "MT",
-                        "NE",
-                        "NV",
-                        "NH",
-                        "NJ",
-                        "NM",
-                        "NY",
-                        "NC",
-                        "ND",
-                        "OH",
-                        "OK",
-                        "OR",
-                        "PA",
-                        "RI",
-                        "SC",
-                        "SD",
-                        "TN",
-                        "TX",
-                        "UT",
-                        "VT",
-                        "VA",
-                        "WA",
-                        "WV",
-                        "WI",
-                        "WY",
+                        "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL",
+                        "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA",
+                        "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE",
+                        "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK",
+                        "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT",
+                        "VA", "WA", "WV", "WI", "WY",
                       ].map((abbr) => (
                         <option key={abbr} value={abbr}>
                           {abbr}
@@ -410,32 +366,48 @@ This inquiry was sent from the Donnell Green - Fairway Independent Mortgage webs
 
                   <div>
                     <label className="block text-sm font-semibold text-midnight-ink">
-                      Primary Goal *
+                      Loan Program *
                     </label>
                     <select
                       name="primaryGoal"
                       required
                       className="mt-1 w-full rounded-lg border border-border bg-lift-white/60 px-4 py-3 text-midnight-ink outline-none focus:ring-2 focus:ring-midnight-ink/20"
                     >
-                      <option value="">Select a goal…</option>
-                      <option value="Home Purchase">Home Purchase</option>
-                      <option value="Refinance for Lower payment">
-                        Refinance for Lower Payment
+                      <option value="">Select a loan program…</option>
+                      <option value="Purchase">Purchase</option>
+                      <option value="Rate and Term Refinance">
+                        Rate and Term Refinance
                       </option>
-                      <option value="Refinance for Cash out">
-                        Refinance for Cash Out
+                      <option value="Cash Out Refinance">
+                        Cash Out Refinance
                       </option>
-                      <option value="Home Equity Line of Credit (HELOC)">
-                        Home Equity Line of Credit (HELOC)
+                      <option value="Conventional">Conventional</option>
+                      <option value="FHA">FHA</option>
+                      <option value="VA">VA</option>
+                      <option value="Jumbo">Jumbo</option>
+                      <option value="HELOCs">HELOCs</option>
+                      <option value="Interest Only Products">
+                        Interest Only Products
                       </option>
-                      <option value="Investment Property (Purchase or Refinance)">
-                        Investment Property (Purchase or Refinance)
+                      <option value="Reverse Mortgage">Reverse Mortgage</option>
+                      <option value="DSCR Loans">DSCR Loans</option>
+                      <option value="Bank Statement Loans">
+                        Bank Statement Loans
                       </option>
-                      <option value="Commercial Real Estate Finance options">
-                        Commercial Real Estate Finance Options
+                      <option value="P&L Loans">P&amp;L Loans</option>
+                      <option value="Fix and Flip Loans">
+                        Fix and Flip Loans
                       </option>
-                      <option value="General Home or Commercial Finance Questions">
-                        General Home or Commercial Finance Questions
+                      <option value="Bridge Loans">Bridge Loans</option>
+                      <option value="Private and Hard Money">
+                        Private and Hard Money
+                      </option>
+                      <option value="ITIN Loans">ITIN Loans</option>
+                      <option value="Commercial 5+ Units">
+                        Commercial 5+ Units
+                      </option>
+                      <option value="Construction Loans">
+                        Construction Loans
                       </option>
                     </select>
                   </div>

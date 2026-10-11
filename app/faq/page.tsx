@@ -33,7 +33,7 @@ const faqCategories = [
       {
         question: "How long does the mortgage process take?",
         answer:
-          "From application to closing, most home purchases take 30–45 days. Refinances typically close in 21–30 days. With Fairway's support system and my 21 years of customer service experience, I help keep your transaction seamless and on track. I'll give you a clear timeline upfront and keep you updated at every milestone.",
+          "From application to closing, most home purchases take 30–45 days. Refinances typically close in 21–30 days. With   system and my 21 years of customer service experience, I help keep your transaction seamless and on track. I'll give you a clear timeline upfront and keep you updated at every milestone.",
       },
       {
         question: "Do I need a real estate agent?",
@@ -148,7 +148,7 @@ export default function FAQPage() {
     <PageShell
       eyebrow="FAQ"
       title="Frequently Asked Questions"
-      description="Everything you need to know about working with Donnell Green at Fairway Independent Mortgage Corporation."
+      description="Everything you need to know about working with Donnell Green"
     >
       <div className="mx-auto max-w-[1000px] space-y-12">
         {/* ─── INTRO ─────────────────────────────────────────────────── */}
@@ -283,13 +283,11 @@ export default function FAQPage() {
                 <h3 className="mt-4 font-display text-lg font-semibold text-midnight-ink">
                   Call or Text
                 </h3>
-                <p className="mt-1 text-sm text-[#0F6D69]">
-                  (667) 900-2913
-                </p>
+                <p className="mt-1 text-sm text-[#0F6D69]">(667) 900-2913</p>
               </a>
 
               <a
-                href="mailto:donnell.green@fairwaymc.com"
+                href="mailto: donnell.green@luminlending.com"
                 className="group flex flex-col items-center rounded-[20px] border border-border bg-lift-white/50 p-6 text-center transition-all duration-300 hover:bg-lift-white"
               >
                 <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#0F6D69]/10 text-[#0F6D69] transition group-hover:bg-[#0F6D69] group-hover:text-white">
@@ -299,7 +297,7 @@ export default function FAQPage() {
                   Email Me
                 </h3>
                 <p className="mt-1 text-xs text-[#0F6D69] break-all">
-                  donnell.green@fairwaymc.com
+                  donnell.green@luminlending.com
                 </p>
               </a>
 

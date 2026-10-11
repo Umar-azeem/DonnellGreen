@@ -50,10 +50,6 @@ const columns = [
     links: [
       { label: "About Donnell", href: "/about" },
       {
-        label: "Fairway Mortgage",
-        href: "https://www.fairwayindependentmc.com",
-      },
-      {
         label: "LinkedIn",
         href: "http://linkedin.com/in/donnell-green-b2557066",
       },
@@ -160,10 +156,12 @@ export function CtaFooter() {
               </span>
             </a>
             <p className="mt-4 max-w-[240px] text-[14px] text-white font-light leading-[1.5]">
-              Guiding you home with clarity, care, and 21 years of service  .
+              Guiding you home with clarity, care, and 24 years of service .
             </p>
             <p className="mt-2 text-[12px] text-white/70 font-light">
-              NMLS# 1217575
+             <Link href="https://nmlsconsumeraccess.org/TuringTestPage.aspx?ReturnUrl=/EntityDetails.aspx/INDIVIDUAL/1217575" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                NMLS# 1217575
+              </Link>
             </p>
             <div className="mt-4 flex flex-wrap gap-3">
               {socialLinks.map(({ id, icon: Icon, url, label }) => (
@@ -220,14 +218,14 @@ export function CtaFooter() {
             </span>
             <p className="mt-1 text-[14px] font-light text-white break-all">
               <a
-                href="mailto:donnell.green@fairwaymc.com"
+                href="mailto: donnell.green@luminlending.com"
                 className="hover:underline"
               >
-                donnell.green@fairwaymc.com
+                donnell.green@luminlending.com
               </a>
             </p>
           </div>
-          <div>
+          {/* <div>
             <span className="font-mono text-[10px] uppercase tracking-[0.75px] text-white/50">
               Office
             </span>
@@ -236,7 +234,7 @@ export function CtaFooter() {
               <br />
               Towson, MD 21204
             </p>
-          </div>
+          </div> */}
         </div>
 
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-border pt-6 sm:flex-row">
@@ -244,8 +242,7 @@ export function CtaFooter() {
             className="text-[13px] font-light"
             style={{ color: "#231f23a3" }}
           >
-            © {new Date().getFullYear()} Donnell Green · Fairway Independent
-            Mortgage Corporation. All rights reserved.
+            © {new Date().getFullYear()} Donnell Green. All rights reserved.
           </span>
           <span className="rounded-full bg-cache-sand px-3 py-1 font-mono text-[10px] uppercase tracking-[0.75px] text-white">
             NMLS# 1217575

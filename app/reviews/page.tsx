@@ -709,7 +709,7 @@ export default function ReviewsPage() {
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
                   <Link
-                    href="https://mobile.fairwaynow.com/homehub/signup/donnell.green@fairwaymc.com"
+                    href="https://mobile.fairwaynow.com/homehub/signup/ donnell.green@luminlending.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

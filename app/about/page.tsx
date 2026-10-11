@@ -125,8 +125,8 @@ export default function AboutPage() {
                   I want my clients to feel important and educated on the entire
                   process. My many years of experience and tenacity will help
                   showcase my industry product knowledge and my absolute
-                  integrity and back by Fairway's support system, it will help
-                  ease the mortgage process and make your transaction seamless.
+                  integrity and back by system, it will help ease the mortgage
+                  process and make your transaction seamless.
                 </p>
                 <p className="mt-3 text-sm text-midnight-ink/70 leading-relaxed">
                   My work ethic and passion to deliver 100% customer

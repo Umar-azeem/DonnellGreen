@@ -3,12 +3,13 @@ import { Hero } from "@/components/nerdstack/hero"
 import { LogoStrip } from "@/components/nerdstack/logo-strip"
 import { Features } from "@/components/nerdstack/features"
 import { Stats } from "@/components/nerdstack/stats"
-import { Testimonials } from "@/components/nerdstack/testimonials"
-import { CtaFooter } from "@/components/nerdstack/cta-footer"
 import TabSec from "@/components/nerdstack/tabSec"
-import { OurHistory } from "@/components/OurHistory"
-import VideoReels from "@/components/VideoReels"
 import FAQ from "@/components/faq"
+
+// import { Testimonials } from "@/components/nerdstack/testimonials"
+// import { CtaFooter } from "@/components/nerdstack/cta-footer"
+// import { OurHistory } from "@/components/OurHistory"
+// import VideoReels from "@/components/VideoReels"
 
 export default function Page() {
   return (
@@ -18,7 +19,7 @@ export default function Page() {
       <TabSec/>
       <LogoStrip />
       <Features />
-      <Stats />
+      {/* <Stats /> */}
       {/* <OurHistory/> */}
       {/* <Testimonials /> */}
       {/* <VideoReels /> */}
