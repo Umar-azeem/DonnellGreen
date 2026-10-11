@@ -204,7 +204,7 @@ export default function AboutPage() {
                   Experience You Can Trust
                 </span>
                 <h2 className="mt-2 font-display text-3xl font-bold text-midnight-ink">
-                  21 Years of Service
+                  24 Years of Service
                 </h2>
                 <p className="mt-4 text-sm text-midnight-ink/70 leading-relaxed">
                   With 6 years in the mortgage industry, 10 years in finance, 11
