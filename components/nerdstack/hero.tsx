@@ -134,7 +134,6 @@ export function Hero() {
           {/* Badge */}
           <div className="ns-fade-up inline-flex items-center gap-2.5 rounded-full border border-border bg-lift-white px-4 py-1.5 font-mono text-[11px] tracking-[0.5px] text-midnight-ink/70">
             <Users className="size-4 text-core-coral" strokeWidth={1.8} />
-            <span className="font-bold text-midnight-ink">100K+</span>
             Satisfied Customers
           </div>
 

@@ -187,7 +187,7 @@ export function Navbar() {
             Sign in
           </Link>
           <Link
-            href="https://luminlending-apply-donnell"
+            href="https://luminlending-apply-donnell-green.my1003app.com/1217575/register"
             className="rounded-lg bg-midnight-ink px-4 py-2 text-[14px] font-light text-paper-cream transition-transform duration-300 hover:-translate-y-0.5"
           >
             Apply Now

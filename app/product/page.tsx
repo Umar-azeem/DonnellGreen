@@ -20,7 +20,7 @@ import {
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Donnell Green — Loan Officer | Fairway Independent Mortgage",
+  title: "Donnell Green — Loan Officer |   Mortgage",
   description:
     "Meet Donnell Green, loan officer with 6+ years in mortgages, specializing in home purchasing and refinancing. 5 stars, 39 reviews.",
 };
@@ -312,7 +312,7 @@ export default function DonnellGreenPage() {
                         LEARN MORE
                       </Button>
                     </Link>
-                    <Link href="/contact">
+                    <Link href="https://luminlending-apply-donnell-green.my1003app.com/1217575/register">
                       <Button className="bg-midnight-ink text-lift-white hover:bg-midnight-ink/90">
                         APPLY NOW
                       </Button>

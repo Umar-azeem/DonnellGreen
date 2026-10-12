@@ -54,7 +54,7 @@ Message:
 ${message || "No additional message provided."}
 
 ---
-This inquiry was sent from the Donnell Green - Fairway Independent Mortgage website.`,
+This inquiry was sent from the Donnell Green -   Mortgage website.`,
     );
 
     window.open(
@@ -199,23 +199,9 @@ This inquiry was sent from the Donnell Green - Fairway Independent Mortgage webs
                       </div>
                     </a>
 
-                    <div className="flex items-start gap-4">
-                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-border bg-lift-white text-midnight-ink">
-                        <MapPin className="h-4 w-4" />
-                      </div>
-                      <div>
-                        <p className="font-bold text-midnight-ink">Address</p>
-                        <p className="text-sm text-midnight-ink/60">
-                          40 W. Chesapeake Ave,
-                          <br />
-                          Suite 400
-                          <br />
-                          Towson, MD 21204
-                        </p>
-                      </div>
-                    </div>
+                    
 
-                    <div className="flex items-start gap-4">
+                    {/* <div className="flex items-start gap-4">
                       <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-border bg-lift-white text-midnight-ink">
                         <Clock className="h-4 w-4" />
                       </div>
@@ -230,7 +216,7 @@ This inquiry was sent from the Donnell Green - Fairway Independent Mortgage webs
                           </span>
                         </p>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 
@@ -253,7 +239,7 @@ This inquiry was sent from the Donnell Green - Fairway Independent Mortgage webs
                     ))}
                   </div>
                   <p className="mt-4 text-xs text-midnight-ink/40">
-                    NMLS# 1217575 · Fairway Independent Mortgage Corporation
+                    NMLS# 1217575 · Mortgage Corporation
                   </p>
                 </div>
               </div>
@@ -350,12 +336,56 @@ This inquiry was sent from the Donnell Green - Fairway Independent Mortgage webs
                     >
                       <option value="">Select a state…</option>
                       {[
-                        "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL",
-                        "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA",
-                        "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE",
-                        "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK",
-                        "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT",
-                        "VA", "WA", "WV", "WI", "WY",
+                        "AL",
+                        "AK",
+                        "AZ",
+                        "AR",
+                        "CA",
+                        "CO",
+                        "CT",
+                        "DE",
+                        "FL",
+                        "GA",
+                        "HI",
+                        "ID",
+                        "IL",
+                        "IN",
+                        "IA",
+                        "KS",
+                        "KY",
+                        "LA",
+                        "ME",
+                        "MD",
+                        "MA",
+                        "MI",
+                        "MN",
+                        "MS",
+                        "MO",
+                        "MT",
+                        "NE",
+                        "NV",
+                        "NH",
+                        "NJ",
+                        "NM",
+                        "NY",
+                        "NC",
+                        "ND",
+                        "OH",
+                        "OK",
+                        "OR",
+                        "PA",
+                        "RI",
+                        "SC",
+                        "SD",
+                        "TN",
+                        "TX",
+                        "UT",
+                        "VT",
+                        "VA",
+                        "WA",
+                        "WV",
+                        "WI",
+                        "WY",
                       ].map((abbr) => (
                         <option key={abbr} value={abbr}>
                           {abbr}

@@ -8,37 +8,64 @@ import {
   ArrowRight,
   Phone,
   BadgeCheck,
-  Users,
   Clock,
   Sparkles,
   Handshake,
   TrendingUp,
   FileText,
-  Target,
-  CheckCircle,
-  Zap,
   MessageCircle,
   Star,
+  Zap,
+  Mail,
+  ExternalLink,
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About — Donnell Green | Fairway Independent Mortgage",
+  title: "About — Donnell Green | Lumin Lending",
   description:
-    "Meet Donnell Green, your local loan officer at Fairway Independent Mortgage Corporation. Learn about his story, mission, and why clients trust him for home purchasing and refinancing.",
+    "Meet Donnell Green, Senior Mortgage Broker at Lumin Lending. Explore home purchase, refinance, home equity, and investment property financing options with clear guidance from application to closing.",
 };
+
+const APPLY_URL =
+  "https://luminlending-apply-donnell-green.my1003app.com/1217575/register?lang=en";
+const NMLS_URL =
+  "https://nmlconsumeraccess.org/EntityDetails.aspx/INDIVIDUAL/1217575";
+const REVIEWS_URL = "https://www.experience.com/reviews/donnell-green-lumi";
+const LUMIN_URL = "https://luminlending.com/";
+
+const loanPrograms = [
+  "Purchase",
+  "Rate & Term Refinance",
+  "Cash-Out Refinance",
+  "Conventional",
+  "FHA",
+  "VA",
+  "Jumbo",
+  "HELOCs",
+  "Interest-Only Products",
+  "Reverse Mortgage",
+  "DSCR Loans",
+  "Bank Statement Loans",
+  "P&L Loans",
+  "Fix & Flip Loans",
+  "Bridge Loans",
+  "Private & Hard Money",
+  "ITIN Loans",
+  "Commercial 5+ Units",
+  "Construction Loans",
+];
 
 export default function AboutPage() {
   return (
     <PageShell
       eyebrow="About"
-      title="Your Trusted Loan Officer"
-      description="Expert guidance, transparent terms, and a process built for home buyers and refinancers."
+      title="Your Trusted Mortgage Broker"
+      description="Expert guidance, transparent terms, and a process built for homebuyers, homeowners, and investors."
     >
       <div className="mx-auto max-w-[1000px] space-y-20">
         {/* ─── HERO SECTION ─────────────────────────────────────────── */}
         <Reveal>
           <section className="relative overflow-hidden rounded-[32px] border border-border bg-[#0F6D69] shadow-card-soft transition-all duration-300 hover:-translate-y-1">
-            {/* Decorative blurs */}
             <div className="absolute -right-16 -top-16 h-64 w-64 rounded-full bg-[#0F6D69]/5 blur-3xl" />
             <div className="absolute -bottom-16 -left-16 h-64 w-64 rounded-full bg-[#0F6D69]/5 blur-3xl" />
 
@@ -51,21 +78,21 @@ export default function AboutPage() {
                 <h1 className="font-display text-4xl font-bold tracking-tight text-midnight-ink sm:text-5xl">
                   Donnell Green,
                   <br />
-                  <span className="text-white">Your Local Loan Officer</span>
+                  <span className="text-white">Your Local Mortgage Broker</span>
                 </h1>
                 <p className="max-w-2xl text-sm text-midnight-ink/70 sm:text-base">
-                  I'm a loan officer at Fairway Independent Mortgage Corporation
-                  where we specialize in home purchasing and home refinancing
-                  with a ton of products for both. I have been in the mortgage
-                  industry for 6 years, finance for 10 years, sales for 11
-                  years, and customer service for 21 years.
+                  I'm a Senior Mortgage Broker at Lumin Lending. I help clients
+                  explore options for buying a home, refinancing, accessing home
+                  equity, and financing investment properties. With access to a
+                  wide range of loan programs, I can help you compare solutions
+                  that fit your goals.
                 </p>
                 <div className="flex flex-wrap justify-center gap-3 pt-2 lg:justify-start">
-                  <Link href="/contact">
+                  <a href={APPLY_URL} target="_blank" rel="noopener noreferrer">
                     <Button className="bg-black text-white shadow-md transition-all duration-300 hover:bg-[#96694f] hover:shadow-lg">
                       Get Pre-Approved
                     </Button>
-                  </Link>
+                  </a>
                   <a href="tel:+16679002913">
                     <Button
                       variant="outline"
@@ -80,7 +107,7 @@ export default function AboutPage() {
 
               {/* Right Image */}
               <div className="shrink-0">
-                <div className="relative h-48 w-48 sm:h-56 sm:w-56 lg:h-96 lg:w-96 ">
+                <div className="relative h-48 w-48 sm:h-56 sm:w-56 lg:h-96 lg:w-96">
                   <div className="absolute inset-0 rounded-full bg-[#0F6D69]/10" />
                   <Image
                     src="/img/dp.png"
@@ -97,7 +124,7 @@ export default function AboutPage() {
           </section>
         </Reveal>
 
-        {/* ─── OUR STORY ────────────────────────────────────────────── */}
+        {/* ─── ABOUT DONNELL ────────────────────────────────────────── */}
         <Reveal>
           <section className="overflow-hidden rounded-[24px] border border-border bg-lift-white shadow-card-soft transition-all duration-300 hover:-translate-y-1">
             <div className="flex flex-col lg:flex-row">
@@ -106,31 +133,28 @@ export default function AboutPage() {
                   About Donnell
                 </span>
                 <h2 className="mt-2 font-display text-3xl font-bold text-midnight-ink">
-                  Building Relationships That Last
+                  Clear Guidance, Consistent Communication
                 </h2>
                 <p className="mt-4 text-sm text-midnight-ink/70 leading-relaxed">
-                  Hello friends, family, and future referral partners. My name
-                  is Donnell Green. I'm a loan officer at Fairway Independent
-                  Mortgage Corporation where we specialize in home purchasing
-                  and home refinancing with a ton of products for both.
+                  I have 8 years of mortgage experience, 12 years in finance, 13
+                  years in sales, and 24 years in customer service. Whether
+                  you're a homebuyer, a current homeowner, or a referral
+                  partner, you can expect clear guidance and consistent
+                  communication from application through closing.
                 </p>
                 <p className="mt-3 text-sm text-midnight-ink/70 leading-relaxed">
-                  I have been in the mortgage industry for 6 years, finance for
-                  10 years, sales for 11 years, and customer service for 21
-                  years. My goal is to build a relationship with my customers
-                  that helps them feel that they are completely satisfied and
-                  respected throughout the entire mortgage process.
+                  As a mortgage broker, I can help you compare programs for a
+                  range of goals and financial situations — from conventional
+                  and government loans to investment property financing and
+                  alternative income documentation. Program availability and
+                  qualification requirements vary, so we'll review which options
+                  fit your specific situation.
                 </p>
                 <p className="mt-3 text-sm text-midnight-ink/70 leading-relaxed">
-                  I want my clients to feel important and educated on the entire
-                  process. My many years of experience and tenacity will help
-                  showcase my industry product knowledge and my absolute
-                  integrity and back by system, it will help ease the mortgage
-                  process and make your transaction seamless.
-                </p>
-                <p className="mt-3 text-sm text-midnight-ink/70 leading-relaxed">
-                  My work ethic and passion to deliver 100% customer
-                  satisfaction will guarantee loyal customers for life.
+                  My goal is to build a relationship with my clients that helps
+                  them feel completely satisfied and respected throughout the
+                  entire mortgage process. I want my clients to feel important
+                  and educated at every step.
                 </p>
               </div>
               <div className="lg:w-2/5">
@@ -195,7 +219,7 @@ export default function AboutPage() {
           ))}
         </div>
 
-        {/* ─── OUR HISTORY ──────────────────────────────────────────── */}
+        {/* ─── EXPERIENCE YOU CAN TRUST ─────────────────────────────── */}
         <Reveal>
           <section className="overflow-hidden rounded-[24px] border border-border bg-lift-white shadow-card-soft transition-all duration-300 hover:-translate-y-1">
             <div className="flex flex-col lg:flex-row-reverse">
@@ -207,17 +231,17 @@ export default function AboutPage() {
                   24 Years of Service
                 </h2>
                 <p className="mt-4 text-sm text-midnight-ink/70 leading-relaxed">
-                  With 6 years in the mortgage industry, 10 years in finance, 11
-                  years in sales, and 21 years in customer service, I bring a
+                  With 8 years in the mortgage industry, 12 years in finance, 13
+                  years in sales, and 24 years in customer service, I bring a
                   wealth of experience to every transaction. My background has
                   taught me the importance of listening, educating, and
                   advocating for my clients.
                 </p>
                 <p className="mt-3 text-sm text-midnight-ink/70 leading-relaxed">
-                  Backed by Fairway Independent Mortgage Corporation's powerful
-                  support system, I help ease the mortgage process and make your
-                  transaction seamless. Whether you're buying your first home or
-                  refinancing, I'm here to guide you every step of the way.
+                  Backed by Lumin Lending's support system, I help ease the
+                  mortgage process and make your transaction seamless. Whether
+                  you're buying your first home or refinancing, I'm here to
+                  guide you every step of the way.
                 </p>
                 <div className="mt-6 flex items-center gap-4">
                   <div className="flex items-center gap-1">
@@ -228,12 +252,24 @@ export default function AboutPage() {
                       />
                     ))}
                   </div>
-                  <span className="text-sm font-semibold text-midnight-ink">
-                    5.00 · 39 Reviews
-                  </span>
+                  <a
+                    href={REVIEWS_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-semibold text-midnight-ink hover:text-[#0F6D69] hover:underline"
+                  >
+                    5.0 · 39 Reviews
+                  </a>
                 </div>
                 <p className="mt-1 text-xs text-midnight-ink/50">
-                  NMLS# 1217575
+                  <a
+                    href={NMLS_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-[#0F6D69] hover:underline"
+                  >
+                    NMLS# 1217575
+                  </a>
                 </p>
               </div>
               <div className="lg:w-2/5">
@@ -245,6 +281,46 @@ export default function AboutPage() {
                   className="h-64 w-full object-cover lg:h-full"
                 />
               </div>
+            </div>
+          </section>
+        </Reveal>
+
+        {/* ─── LOAN PROGRAMS ────────────────────────────────────────── */}
+        <Reveal>
+          <section className="rounded-[24px] border border-border bg-lift-white p-8 shadow-card-soft transition-all duration-300 hover:-translate-y-1 sm:p-12">
+            <div className="text-center">
+              <span className="text-sm font-semibold uppercase tracking-wider text-[#0F6D69]">
+                Loan Programs
+              </span>
+              <h2 className="mt-2 font-display text-3xl font-bold text-midnight-ink">
+                More Than One Way to Finance a Property
+              </h2>
+              <p className="mx-auto mt-4 max-w-2xl text-sm text-midnight-ink/70 leading-relaxed">
+                As a mortgage broker, I can help you compare programs for a
+                range of goals and financial situations. Program availability
+                and qualification requirements vary — we'll review which options
+                fit your specific situation.
+              </p>
+            </div>
+
+            <div className="mt-8 flex flex-wrap justify-center gap-2.5">
+              {loanPrograms.map((program) => (
+                <span
+                  key={program}
+                  className="rounded-full border border-[#0F6D69]/20 bg-[#0F6D69]/5 px-4 py-2 text-xs font-medium text-[#0F6D69] transition-all duration-300 hover:bg-[#0F6D69] hover:text-white"
+                >
+                  {program}
+                </span>
+              ))}
+            </div>
+
+            <div className="mt-8 text-center">
+              <a href={APPLY_URL} target="_blank" rel="noopener noreferrer">
+                <Button className="bg-[#0F6D69] text-white shadow-md transition-all duration-300 hover:bg-[#96694f] hover:shadow-lg">
+                  Apply Today
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </a>
             </div>
           </section>
         </Reveal>
@@ -265,7 +341,7 @@ export default function AboutPage() {
           </section>
         </Reveal>
 
-        {/* ─── OUR MISSION ───────────────────────────────────────────── */}
+        {/* ─── MISSION ──────────────────────────────────────────────── */}
         <Reveal>
           <section className="relative overflow-hidden rounded-[24px] border border-border bg-[#0F6D69] p-8 text-white shadow-card-soft transition-all duration-300 hover:-translate-y-1 sm:p-12">
             <div className="absolute inset-0 opacity-10">
@@ -289,7 +365,7 @@ export default function AboutPage() {
           </section>
         </Reveal>
 
-        {/* ─── HOW IT WORKS ──────────────────────────────────────────── */}
+        {/* ─── HOW IT WORKS ─────────────────────────────────────────── */}
         <Reveal>
           <section className="rounded-[24px] border border-border bg-lift-white p-8 shadow-card-soft transition-all duration-300 hover:-translate-y-1 sm:p-12">
             <div className="text-center">
@@ -334,12 +410,12 @@ export default function AboutPage() {
               ))}
             </div>
             <div className="mt-8 text-center">
-              <Link href="/contact">
+              <a href={APPLY_URL} target="_blank" rel="noopener noreferrer">
                 <Button className="bg-[#0F6D69] text-white shadow-md transition-all duration-300 hover:bg-[#96694f] hover:shadow-lg">
                   Get Started Today
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
-              </Link>
+              </a>
             </div>
           </section>
         </Reveal>
@@ -354,37 +430,71 @@ export default function AboutPage() {
               <h2 className="mt-2 font-display text-3xl font-bold text-midnight-ink">
                 Let's Connect
               </h2>
+              <p className="mx-auto mt-3 max-w-xl text-sm text-midnight-ink/60">
+                I don't have an office location to visit currently. In-person
+                appointments can be scheduled by request.
+              </p>
             </div>
+
             <div className="mt-8 grid gap-6 sm:grid-cols-2">
-              <div className="flex flex-col items-center rounded-[20px] border border-border bg-lift-white/50 p-6 text-center">
+              <a
+                href="tel:+16679002913"
+                className="group flex flex-col items-center rounded-[20px] border border-border bg-lift-white/50 p-6 text-center transition-all duration-300 hover:bg-lift-white"
+              >
                 <Phone className="h-7 w-7 text-[#0F6D69]" strokeWidth={1.8} />
                 <h3 className="mt-3 font-display text-lg font-semibold text-midnight-ink">
-                  Office & Cell
+                  Call or Text
                 </h3>
-                <a
-                  href="tel:+16679002913"
-                  className="mt-1 text-sm text-[#0F6D69] hover:underline"
-                >
-                  (667) 900-2913
-                </a>
-              </div>
-              <div className="flex flex-col items-center rounded-[20px] border border-border bg-lift-white/50 p-6 text-center">
-                <Target className="h-7 w-7 text-[#0F6D69]" strokeWidth={1.8} />
+                <p className="mt-1 text-sm text-[#0F6D69]">(667) 900-2913</p>
+              </a>
+
+              <a
+                href="mailto:donnell.green@luminlending.com"
+                className="group flex flex-col items-center rounded-[20px] border border-border bg-lift-white/50 p-6 text-center transition-all duration-300 hover:bg-lift-white"
+              >
+                <Mail className="h-7 w-7 text-[#0F6D69]" strokeWidth={1.8} />
                 <h3 className="mt-3 font-display text-lg font-semibold text-midnight-ink">
-                  Address
+                  Email Me
                 </h3>
-                <p className="mt-1 text-sm text-midnight-ink/60">
-                  40 W. Chesapeake Ave,
-                  <br />
-                  Suite 400
-                  <br />
-                  Towson, MD 21204
+                <p className="mt-1 text-xs text-[#0F6D69] break-all">
+                  donnell.green@luminlending.com
                 </p>
-              </div>
+              </a>
             </div>
+
+            <div className="mt-6 flex flex-wrap justify-center gap-4">
+              <a
+                href={LUMIN_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-xs text-midnight-ink/60 transition-colors hover:text-[#0F6D69]"
+              >
+                <ExternalLink className="h-3.5 w-3.5" />
+                luminlending.com
+              </a>
+              <a
+                href={NMLS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-xs text-midnight-ink/60 transition-colors hover:text-[#0F6D69]"
+              >
+                <ExternalLink className="h-3.5 w-3.5" />
+                NMLS# 1217575
+              </a>
+              <a
+                href={REVIEWS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-xs text-midnight-ink/60 transition-colors hover:text-[#0F6D69]"
+              >
+                <ExternalLink className="h-3.5 w-3.5" />
+                Read Reviews
+              </a>
+            </div>
+
             <div className="mt-6 text-center">
               <p className="text-xs text-midnight-ink/40">
-                NMLS# 1217575 · Fairway Independent Mortgage Corporation
+                Donnell Green · NMLS# 1217575 · Lumin Lending
               </p>
             </div>
           </section>

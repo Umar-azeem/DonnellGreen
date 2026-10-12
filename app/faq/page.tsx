@@ -334,10 +334,7 @@ export default function FAQPage() {
           <section className="rounded-[24px] border border-border bg-lift-white/50 p-6 text-center">
             <div className="flex items-center justify-center gap-2 text-xs text-midnight-ink/50">
               <ShieldCheck className="h-4 w-4" />
-              <span>
-                Donnell Green · NMLS# 1217575 · Fairway Independent Mortgage
-                Corporation
-              </span>
+              <span>Donnell Green · NMLS# 1217575 · Mortgage Corporation</span>
             </div>
             <p className="mt-2 text-xs text-midnight-ink/40 leading-relaxed">
               This information is for educational purposes only and does not

@@ -553,7 +553,7 @@ export default function ReviewsPage() {
     <PageShell
       eyebrow="Reviews"
       title="Donnell Green Client Reviews"
-      description="Real stories from real families who have purchased or refinanced homes with Donnell Green at Fairway Independent Mortgage."
+      description="Real stories from real families who have purchased or refinanced homes with Donnell Green at   Mortgage."
     >
       <div className="mx-auto max-w-[1000px] space-y-20">
         {/* ─── Hero / Intro ────────────────────────────────────────── */}
@@ -569,7 +569,7 @@ export default function ReviewsPage() {
             </h2>
             <p className="mt-4 text-sm text-midnight-ink/60 max-w-2xl mx-auto">
               Real stories from real clients who have purchased or refinanced
-              with Donnell Green at Fairway Independent Mortgage.
+              with Donnell Green at Mortgage.
             </p>
 
             {/* Rating summary */}

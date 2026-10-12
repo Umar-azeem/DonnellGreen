@@ -335,7 +335,7 @@ export default function FAQ() {
                     </div>
                     <div>
                       <p className="font-semibold text-midnight-ink">
-                        Office & Cell
+                         Cell
                       </p>
                       <a
                         href="tel:+16679002913"

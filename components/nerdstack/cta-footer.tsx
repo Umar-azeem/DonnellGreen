@@ -2,7 +2,6 @@
 import { Reveal } from "@/components/nerdstack/reveal";
 import { BookOpen, ArrowRight, PlayCircle, HelpCircle } from "lucide-react";
 import Link from "next/link";
-import { Terminal, Code2, AtSign, Rss } from "lucide-react";
 import Image from "next/image";
 import { FaLinkedin, FaGoogle } from "react-icons/fa";
 import Cards from "../cards";
@@ -37,7 +36,7 @@ const columns = [
     links: [
       { label: "Loan Process", href: "/about" },
       { label: "FAQs", href: "/about" },
-      { label: "Reviews", href: "/about" },
+      { label: "Reviews", href: "/reviews" },
       { label: "Contact", href: "/contact" },
       {
         label: "Zillow Profile",
@@ -53,7 +52,10 @@ const columns = [
         label: "LinkedIn",
         href: "http://linkedin.com/in/donnell-green-b2557066",
       },
-      { label: "NMLS# 1217575", href: "/about" },
+      {
+        label: "NMLS# 1217575",
+        href: "https://www.nmlsconsumeraccess.org/TuringTestPage.aspx?ReturnUrl=/EntityDetails.aspx/INDIVIDUAL/1217575",
+      },
       { label: "Contact", href: "/contact" },
     ],
   },
@@ -148,7 +150,7 @@ export function CtaFooter() {
               <span className="flex  items-center justify-center rounded-lg bg-white text-paper-cream">
                 <Image
                   src="/img/logo.png"
-                  alt="Donnell Green - Fairway Independent Mortgage"
+                  alt="Donnell Green -   Mortgage"
                   width={120}
                   height={30}
                   className="h-16 w-28 object-contain"
@@ -159,7 +161,12 @@ export function CtaFooter() {
               Guiding you home with clarity, care, and 24 years of service .
             </p>
             <p className="mt-2 text-[12px] text-white/70 font-light">
-             <Link href="https://nmlsconsumeraccess.org/TuringTestPage.aspx?ReturnUrl=/EntityDetails.aspx/INDIVIDUAL/1217575" target="_blank" rel="noopener noreferrer" className="hover:underline">
+              <Link
+                href="https://nmlsconsumeraccess.org/TuringTestPage.aspx?ReturnUrl=/EntityDetails.aspx/INDIVIDUAL/1217575"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
                 NMLS# 1217575
               </Link>
             </p>
