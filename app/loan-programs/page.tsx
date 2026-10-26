@@ -285,7 +285,7 @@ function LoanProgramsContent() {
                     className="border-midnight-ink/20 text-midnight-ink hover:bg-midnight-ink/5"
                   >
                     <Icons.Calculator className="mr-2 h-4 w-4" />
-                    Use Our Tools
+                    Mortgage Calculator
                   </Button>
                 </Link>
               </div>

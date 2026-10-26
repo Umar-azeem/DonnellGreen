@@ -205,7 +205,7 @@ export default function LoanProgramDetailPage({
                 <Icons.ArrowRight className="ml-2 w-4 h-4" />
               </Link>
               <Link
-                href="/tools"
+                href="/mortgage-calculator"
                 className="inline-flex items-center px-6 py-3 border border-gray-300 hover:bg-gray-50 text-gray-800 font-semibold rounded-lg transition"
               >
                 Calculate Payments

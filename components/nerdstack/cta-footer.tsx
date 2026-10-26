@@ -36,7 +36,7 @@ const columns = [
     links: [
       { label: "Loan Process", href: "/about" },
       { label: "FAQs", href: "/about" },
-      { label: "Reviews", href: "/reviews" },
+      { label: "Reviews", href: "https://www.experience.com/reviews/donnell-green-lumin" },
       { label: "Contact", href: "/contact" },
       {
         label: "Zillow Profile",

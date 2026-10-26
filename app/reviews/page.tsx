@@ -586,7 +586,7 @@ export default function ReviewsPage() {
                 </span>
               </div>
               <a
-                href="https://www.zillow.com/lender-profile/dgreen82/"
+                href="https://www.experience.com/reviews/donnell-green-lumin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-lift-white px-4 py-2 text-xs font-medium text-midnight-ink transition-colors hover:bg-midnight-ink/5"

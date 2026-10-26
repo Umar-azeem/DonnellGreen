@@ -5,6 +5,7 @@ import { Features } from "@/components/nerdstack/features"
 import { Stats } from "@/components/nerdstack/stats"
 import TabSec from "@/components/nerdstack/tabSec"
 import FAQ from "@/components/faq"
+import MortgageCalculator from "@/components/mortgage-calculator"
 
 // import { Testimonials } from "@/components/nerdstack/testimonials"
 // import { CtaFooter } from "@/components/nerdstack/cta-footer"
@@ -19,12 +20,13 @@ export default function Page() {
       <TabSec/>
       <LogoStrip />
       <Features />
+      <MortgageCalculator />
       {/* <Stats /> */}
       {/* <OurHistory/> */}
       {/* <Testimonials /> */}
       {/* <VideoReels /> */}
       <FAQ/>
-      {/* <CtaFooter /> */}
+      {/* <CtaFooter />  */}
     </main>
   )
 }
